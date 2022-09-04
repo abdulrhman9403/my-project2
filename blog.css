@@ -1,0 +1,133 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+/* landing */
+.landing2{
+  margin-top: 85px;
+  width: 100%;
+  height: 45vh;
+  position: relative;
+  text-align: center;
+  background-image: url(img/banner/b19.jpg);
+  background-position: top 25% right 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.landing2 img{
+  width: 100%;
+  height: 100%;
+}
+.landing1 .text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+.landing2 .text h2{
+  font-size: 40px;
+  color: white;
+  margin-bottom: 10px;
+  
+}
+
+.landing2 .text p{
+  font-size: 17px;
+  color: white;
+  
+}
+/* end landing */
+
+.read{
+  margin-top: 50px;
+}
+.content{
+  margin-bottom: 150px;
+  display: flex;
+  align-items: flex-end;
+}
+.content .text{max-width: 500px;
+margin-left: 100px;
+}
+
+.read .content .img{
+  width: 40%;
+  min-width: 40%;
+
+  height: 350px;
+}
+.read img{
+  width: 100%;
+  height: 100%;
+}
+.read .content .img h2{
+  font-size: 80px;
+  margin: 0px;
+  margin-top: 20px;
+  color: #808080 !important ;
+}
+
+.read .content h2{
+  font-size: 20px;
+  margin: 0px;
+  margin-bottom: 10px;
+  color:black !important;
+}
+.read .content p{
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.read .content a{
+  text-decoration: none;
+  font-weight: bold;
+  color: black ;
+  position: relative;
+}
+.read .content a::after{
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+margin-left: 5px;
+  transform: translateY(-50%);
+}
+
+.read .content a:hover{
+  color: #088178;
+}
+/* end read */
+
+/* media */
+@media(max-width:768px){
+
+  .container{padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.content .text{
+  margin-left: 20px;
+}
+.read .content{
+  text-align: center;
+  flex-direction: column;
+  margin: 0;
+  gap: 150px;
+}
+.read .content .img{
+  width: 100% !important;
+}
+a::after{
+  content: "";
+  display: none;
+}
+}
+
+/* end media */
